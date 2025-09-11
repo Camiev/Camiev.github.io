@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GurApp.cl se despide</title>
+  <meta name="description" content="Aviso de cierre de GurApp.cl" />
+  <style>
+    :root{
+      /* GurApp brand palette */
+      --brand:#6501A3;
+      --brand-50:#F3E8FF;
+      --brand-100:#E9D5FF;
+      --brand-200:#D8B4FE;
+      --brand-300:#C084FC;
+      --brand-400:#A855F7;
+      --brand-500:#6501A3;
+      --brand-600:#4E0180;
+      --brand-700:#3A0161;
+      --brand-800:#2B0148;
+      --brand-900:#1E0133;
+
+      --bg:#0b0b0e;
+      --card:#13131a;
+      --text:#e8e6ef;
+      --muted:#bfbad4;
+      --link:#cdb3f6;
+
+      --gradient-primary: linear-gradient(180deg, var(--brand-400), var(--brand-700));
+    }
+    html, body { height: 100%; }
+    body{
+      margin:0;
+      min-height:100dvh;
+      display:grid;
+      place-items:center;
+      padding: clamp(16px, 2.5vw, 24px);
+      padding-top: max(16px, env(safe-area-inset-top));
+      padding-bottom: max(16px, env(safe-area-inset-bottom));
+      padding-left: max(16px, env(safe-area-inset-left));
+      padding-right: max(16px, env(safe-area-inset-right));
+      background:
+        radial-gradient(1200px 900px at 10% -10%, rgba(131, 6, 208, 0.75), transparent 80%),
+        radial-gradient(1200px 900px at 110% 110%, rgba(144, 10, 227, 0.75), transparent 80%),
+        var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+    .ga-card{
+      max-width: 720px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: clamp(16px, 4vw, 28px);
+      box-shadow: 0 14px 40px rgba(0,0,0,.35);
+      backdrop-filter: blur(6px);
+    }
+    .ga-brand{display:flex; align-items:center; gap:12px; margin-bottom:6px}
+    .ga-badge{width:44px; height:44px; border-radius:12px; background:var(--brand); display:grid; place-items:center; font-weight:800; font-size:22px; color:#fff; box-shadow:0 8px 30px rgba(101,1,163,.5)}
+    .ga-kicker{letter-spacing:.12em; text-transform:uppercase; font-size:.8rem; color:var(--muted)}
+    h1{font-size: clamp(1.4rem, 1.1rem + 1.6vw, 2rem); margin:8px 0 4px 0; line-height:1.15; text-wrap: balance;}
+    .ga-lead{color:var(--muted); margin:0 0 20px 0}
+    .ga-notice{border-left:4px solid var(--brand); background:#1a1b24; padding:16px 18px; border-radius:12px; margin:16px 0}
+    .ga-footer{margin-top:22px; color:var(--muted); font-size:.95rem}
+    a{color:var(--link)}
+    @media (max-width: 420px){
+      .ga-badge{ width:40px; height:40px; font-size:20px }
+      .ga-kicker{ font-size:.75rem }
+      .ga-notice{ padding:14px 14px; border-radius:12px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="ga-card" aria-live="polite">
+    <div class="ga-brand">
+      <div class="ga-badge" aria-hidden="true">G</div>
+      <div>
+        <div class="ga-kicker">GurApp</div>
+        <h1>GurApp.cl se despide</h1>
+      </div>
+    </div>
+
+    <p class="ga-lead">
+      El <strong>6 de septiembre</strong> nuestra página web <strong>dejó</strong> de estar disponible.
+    </p>
+
+    <div class="ga-notice">
+      <p>
+        Sabemos que para muchas y muchos fue un espacio para descubrir talleres y coordinar clases.
+        <strong>Gracias de corazón</strong> por haber sido parte de esta etapa.
+      </p>
+    </div>
+
+    <footer class="ga-footer">
+      <p>Queremos agradecerte por tu apoyo y por haber sido parte de <strong>GurApp.cl</strong>. ¡Te deseamos el mayor de los éxitos en lo que viene!</p>
+      <p>Si necesitas ayuda, escríbenos a <a href="mailto:contacto@gurapp.cl">contacto@gurapp.cl</a>.</p>
+      <p><em>— Equipo GurApp</em></p>
+    </footer>
+  </main>
+</body>
+</html>
