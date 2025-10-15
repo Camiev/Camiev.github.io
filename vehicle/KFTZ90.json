@@ -9,5 +9,6 @@
     "motor": "10TMA60123322",
     "chasis": "3N8CP5HE9KL460208",
     "procedencia": "MEXICO",
-    "fabricante": "NISSAN MPV"
+    "fabricante": "NISSAN MPV",
+    "robo": false
 }

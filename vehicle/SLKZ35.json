@@ -9,5 +9,6 @@
     "motor": "10TMA60123322",
     "chasis": "VR3USHNSKPJ523250",
     "procedencia": "FRANCE",
-    "fabricante": "PEUGEOT"
+    "fabricante": "PEUGEOT",
+    "robo": true
 }
